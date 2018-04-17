@@ -28,6 +28,13 @@ class Complex
 		temp.imag=c.imag+this.imag;
 		return temp;
 	}
+	Complex sub(Complex c)
+	{
+		Complex temp=new Complex();
+		temp.real=c.real-this.real;
+		temp.imag=c.imag-this.imag;
+		return temp;
+	}
 	void display()
 	{
 		System.out.println(real+"+i("+imag+")");
@@ -38,10 +45,8 @@ class Complex
 	Complex c2=new Complex(5.0f,5.0f);
 	Complex c3=c1.add(c2);
 	c3.display();
+	Complex c4=c2.sub(c1);
+	c4.display();
 	}
 }
-/*
-OUTPUT
 
-10.0+i(7.0)
-*/
