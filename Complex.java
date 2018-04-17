@@ -41,8 +41,8 @@ class Complex
 	}
 	public static void main(String[] args)
 	{
-	Complex c1=new Complex(5.0f,2.0f);
-	Complex c2=new Complex(5.0f,5.0f);
+	Complex c1=new Complex(25.14f,56.42f);
+	Complex c2=new Complex(9.14f,3.27f);
 	Complex c3=c1.add(c2);
 	c3.display();
 	Complex c4=c2.sub(c1);
